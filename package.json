@@ -27,6 +27,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
+    "node-minify": "^3.6.0",
     "waypoints": "^4.0.1"
   }
 }

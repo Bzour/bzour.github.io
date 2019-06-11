@@ -179,8 +179,6 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            console.log("Dans le else");
-            // $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
             $.post('https://script.google.com/macros/s/AKfycbyOt9s4t5lpQqA7y3HSrSpzq5a8qjjmvJgjpu_MsjH2stbiUjw/exec', data)
                 .done(function (data) {
                     console.log(data);
@@ -198,34 +196,34 @@ $(document).ready(function () {
 
 /********************** Extras **********************/
 
-// Google map
-function initMap() {
-    var itc_kol = {lat: 22.5932759, lng: 88.27027720000001};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: itc_kol,
-        scrollwheel: false
-    });
+// // Google map
+// function initMap() {
+//     var itc_kol = {lat: 22.5932759, lng: 88.27027720000001};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: itc_kol,
+//         scrollwheel: false
+//     });
 
-    var marker = new google.maps.Marker({
-        position: itc_kol,
-        map: map
-    });
-}
+//     var marker = new google.maps.Marker({
+//         position: itc_kol,
+//         map: map
+//     });
+// }
 
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
+// function initBBSRMap() {
+//     var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: la_fiesta,
+//         scrollwheel: false
+//     });
 
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
-}
+//     var marker = new google.maps.Marker({
+//         position: la_fiesta,
+//         map: map
+//     });
+// }
 
 // alert_markup
 function alert_markup(alert_type, msg) {

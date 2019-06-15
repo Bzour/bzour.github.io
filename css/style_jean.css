@@ -20,3 +20,12 @@ select {
     text-indent: 1px;
     text-overflow: '';
 }
+
+.centered {
+   float: none;
+   margin: 0 auto;
+}
+
+.text-centered {
+   text-align: center;
+}
